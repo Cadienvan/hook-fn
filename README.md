@@ -43,10 +43,10 @@ const testFn = function (str) {
 };
 
 const mockFn = hook({
-    before: (context, args) => {
+    before: ({context, args}) => {
       console.log('Before');
   },
-    after: (context, args, result) => {
+    after: ({context, args, result}) => {
     console.log('After');
   }
 });
