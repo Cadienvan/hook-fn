@@ -1,3 +1,9 @@
+#### 1.0.1 (2022-12-20)
+
+##### Chores
+
+*  better types ([d709b954](https://github.com/Cadienvan/hook-fn/commit/d709b954bc571ecf2217f1eac98bea2096786ff0))
+
 ## 1.0.0 (2022-12-20)
 
 ##### Documentation Changes
