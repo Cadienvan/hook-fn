@@ -24,7 +24,7 @@ export function Hook(options: Partial<DecoratorOptions>) {
 
 // Create a function which can wrap any function and provide the same functionality as the Hookable decorator
 export function hook(options: Partial<FunctionOptions>) {
-  return function (fn: Function) {
+  return function (fn: (...args) => unknown | Promise<unknown>) {
     const context = {};
     const { before, after } = { ...defaultFunctionOptions, ...options };
 
