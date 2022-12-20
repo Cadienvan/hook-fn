@@ -1,3 +1,9 @@
+#### 1.0.2 (2022-12-20)
+
+##### Documentation Changes
+
+*  fixed doc typo ([aa1c3c49](https://github.com/Cadienvan/hook-fn/commit/aa1c3c4953349bfe00656566f747a359047f14a6))
+
 #### 1.0.1 (2022-12-20)
 
 ##### Chores
