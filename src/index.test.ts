@@ -1,8 +1,8 @@
-import { hookable, Hookable } from '.';
+import { hook, Hook } from '.';
 
 let contextChecker = '';
 class MockClass {
-  @Hookable({
+  @Hook({
     before: ({ context, args }) => {
       context.foo = 'bar';
       args[0] = args[0].toUpperCase();
@@ -28,7 +28,7 @@ it('should execute the context modification in the after function', () => {
 
 it('should do nothing if Hookable has no before or after functions indicated', () => {
   class MockClass {
-    @Hookable({})
+    @Hook({})
     public mockMethod(str: string): string {
       return str;
     }
@@ -43,7 +43,7 @@ it('should check the hookable function behaves in the same way as the decorator'
   const testFn = function (str: string): string {
     return str;
   };
-  const mockFn = hookable({
+  const mockFn = hook({
     before: ({ context, args }) => {
       context.foo = 'bar2';
       args[0] = args[0].toUpperCase();
@@ -63,7 +63,7 @@ it('should do nothing if hookable has no before or after functions indicated', (
   const testFn = function (str: string): string {
     return str;
   };
-  const mockFn = hookable({});
+  const mockFn = hook({});
 
   const result = mockFn(testFn)('hello world');
 
