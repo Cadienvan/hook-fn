@@ -20,10 +20,10 @@ import { Hook } from 'hook-fn';
 
 class MyClass {
   @Hook({
-    before: (context, args, target, propertyKey, descriptor) => {
+    before: ({context, args, target, propertyKey, descriptor}) => {
       console.log('Before');
     },
-    after: (context, args, target, propertyKey, descriptor, result) => {
+    after: ({context, args, target, propertyKey, descriptor, result}) => {
       console.log('After');
     },
   })
@@ -73,10 +73,10 @@ const testFn = async function (str) {
 };
 
 const mockFn = hook({
-  before: (context, args) => {
+  before: ({context, args}) => {
     console.log('Before');
   },
-  after: (context, args, result) => {
+  after: ({context, args, result}) => {
     result.then((res) => {
       console.log('After');
     });
