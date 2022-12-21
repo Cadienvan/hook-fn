@@ -58,7 +58,7 @@ mockedTestFn('hello world');
 
 ## A consideration about async functions
 
-Please, consider the `after` function will be executed after the `async` function is called, without waiting for it to resolve or reject.  
+When wrapping an async function with hook-fn, be aware that the `after` hook is executed immediately after the function execution (without waiting for the `Promise` fulfillment), so a `Promise` will be passed to the `result` argument, despite its resolution or rejection.  
 If you want to execute something after the `async` function is resolved or rejected, you can use the `then` or `catch` methods of the returned promise.
 
 ```js
