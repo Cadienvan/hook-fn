@@ -93,13 +93,13 @@ mockedTestFn('hello world');
 ## Decorator
 The decorator will provide two functions to be executed before and after the method to which it is applied.  
 It expects an object with the following properties:  
-- `before`: A function to be executed before the method to which it is applied. It will be called with the following parameters:
+- `before`: A function to be executed before the method to which it is applied. Defaults to a function that does nothing. It will be called with the following parameters:
   - `context`: The context of the method to which it is applied
   - `args`: The arguments passed to the method to which it is applied
   - `target`: The method to which it is applied
   - `propertyKey`: The name of the method to which it is applied
   - `descriptor`: The descriptor of the method to which it is applied.
-- `after`: A function to be executed after the method to which it is applied. It will be called with the following parameters:
+- `after`: A function to be executed after the method to which it is applied. Defaults to a function that does nothing. It will be called with the following parameters:
   - `context`: The context of the method to which it is applied
   - `args`: The arguments passed to the method to which it is applied
   - `target`: The method to which it is applied
