@@ -2,7 +2,7 @@
   "name": "hook-fn",
   "description": "A library which provides pre-execution and post-execution hooks both as a decorator and as a higher-order function.",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
