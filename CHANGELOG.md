@@ -1,3 +1,10 @@
+#### 1.0.4 (2023-01-10)
+
+##### Documentation Changes
+
+*  updated docs ([79e1c071](https://github.com/Cadienvan/hook-fn/commit/79e1c0716d5ce96a0ac5b64b6ed07c7e96869f96))
+*  updated async explanation ([1fbd8bc8](https://github.com/Cadienvan/hook-fn/commit/1fbd8bc8d3ff6362899c97be51a44ccecfa823de))
+
 #### 1.0.3 (2022-12-20)
 
 ##### Documentation Changes

@@ -23,12 +23,14 @@ export function Hook(options: Partial<DecoratorOptions>) {
 }
 
 // Create a function which can wrap any function and provide the same functionality as the Hookable decorator
-export function hook(options: Partial<FunctionOptions>) {
-  return function (fn: (...args) => unknown | Promise<unknown>) {
+export function hook<T extends (...args: any[]) => unknown | Promise<unknown>>(
+  options: Partial<FunctionOptions>
+) {
+  return function (fn: T): (...args: Parameters<T>) => ReturnType<T> {
     const context = {};
     const { before, after } = { ...defaultFunctionOptions, ...options };
 
-    return function (...args: any[]) {
+    return function (...args: Parameters<T>): ReturnType<T> {
       before({ context, args });
       const result = fn(...args);
       after({
@@ -36,7 +38,7 @@ export function hook(options: Partial<FunctionOptions>) {
         args,
         result
       });
-      return result;
+      return result as ReturnType<T>;
     };
   };
 }
