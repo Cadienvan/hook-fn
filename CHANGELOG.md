@@ -1,3 +1,10 @@
+#### 1.0.5 (2023-04-22)
+
+##### Continuous Integration
+
+*  Added Node 20 in ci test matrix ([3bbcd919](https://github.com/Cadienvan/hook-fn/commit/3bbcd9193f4d19245c9bed63f7aaaaa9ae579f90))
+*  Added Node CI ([071d0390](https://github.com/Cadienvan/hook-fn/commit/071d0390120cda8b7c33c4e6c821ccc6752ba9a5))
+
 #### 1.0.4 (2023-01-10)
 
 ##### Documentation Changes
