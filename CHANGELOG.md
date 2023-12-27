@@ -1,3 +1,9 @@
+#### 1.0.6 (2023-12-27)
+
+##### Chores
+
+*  update dependencies ([d1da133a](https://github.com/Cadienvan/hook-fn/commit/d1da133a9779bd1e56b672a6a60ab9255c17d20a))
+
 #### 1.0.5 (2023-04-22)
 
 ##### Continuous Integration
