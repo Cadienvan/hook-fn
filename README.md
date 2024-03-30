@@ -13,7 +13,7 @@ npm install hook-fn
 
 # How do I use it?
 
-## As a decorator
+## As a decorator (Using TypeScript <5.0 or `experimentalDecorators` flag)
 
 ```typescript
 import { Hook } from 'hook-fn';
